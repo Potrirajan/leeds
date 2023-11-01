@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+/* navigation */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    color: #fff;
+}
+.container{
+    width: 90%;
+}
+.navbar-toggler{
+    padding: 0.20rem 0.50rem;
+    font-size: 1rem;
+}
+.navbar-dark .navbar-toggler{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.navbar{
+    background-color: #001233;
+}
+.logo{
+    width: 100px;
+}
+.navbar-dark .navbar-nav{
+    padding-left: 5%;
+}
+.navbar-dark .navbar-nav .nav-item{
+    padding-left: 6px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #FCA311;
+    font-weight: 600;
+}
+.dropdown-menu{
+    background-color: #051737f0;
+}
+.dropdown-menu a{
+    color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #001233;
+    background-color: #fffffff7;
+}
+
+/****** header ******/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background: linear-gradient(rgba(0, 0, 1, 0.684),rgba(16, 4, 55, 0.387)); */
+    overflow: hidden;
+}
+
+/* background video */
+
+.back-video{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: -1;
+    overflow: hidden;
+
+}
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+@media(man-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+/* banner content */
+.banner-cont{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.banner-cont h1{
+    font-size: 58px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.hero-btn{
+    padding: 16px 18px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    border: none;
+    color: #fff;
+    background-color: #001233;
+}
+@media(max-width:768px){
+    .banner-cont{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .banner-cont h1{
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+    .hero-btn{
+        padding: 10px 14px;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid;
+    }
+}
+
+/* about section */
+.heading{
+    color: #001845;
+    font-weight: 600;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.heading::after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: #FCA311;
+    left: 40%;
+    bottom: -5px;
+    border-radius: 50px;
+}
+@media(max-width:768px){
+    .heading{
+        font-size: 28px;
+    }
+}
+/* companies */
+#companies{
+    background: #6b70750a;
+}
+#card_Text{
+    position: absolute;
+    transition: 0.8s;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#card_Hover{
+    cursor: pointer;
+}
+#card_Hover img{
+    object-fit: cover;
+    opacity: 0.9;
+}
+#card_Hover .card-title{
+    position: absolute;
+    bottom: 0;
+    background-color: #FCA311;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    color: #001233;
+}
+#card_Hover:hover #card_Text{
+    bottom: 0;
+    display: block;
+}
+img{
+    transition: 0.8s;
+}
+#card_Hover:hover img{
+    transition: scale(1.1);
+}
+
+/* form */
+
+#form-section input.form-control, textarea.form-control{
+    background: none;
+    border: 1px solid #ffffff;
+    padding: 15px 10px;
+}
+#registration-form-section input.form-control, #registration-form-section textarea.form-control, #registration-form-section .form-select{
+    background: none;
+    border: 1px solid #04225b49;;
+    padding: 15px 10px;
+}
+
+/* footer */
+
+footer i.fa::before{
+    padding-right: 6px;
+}
+footer i.social{
+    transition: 0.5s;
+}
+footer i.social:hover{
+    color: #FCA311;
+    transform: translateY(-10px);
+}
+.hove p{
+    transition: 0.5s;
+}
+.hove p:hover{
+    transform: translateX(15px);
+}
+
+
+/**************************  about section           *******************************/
+
+#profile{
+    margin-top: 100px;
+}
+#managers .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: 0.5s;
+}
+#managers .card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #001845;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+#managers .card:hover .card-body p{
+    color: #ffffff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">>";
+}
+.breadcrumb .active{
+    color: #001845;
+}
+.breadcrumb-item a{
+    font-size: 12px;
+}
+
+/********  REGISTRATION FORM  *********/
+#registration-form-section .register-form label{
+    color: #001845;
+}
+
+/********** job openings *************/
+.hover:hover{
+    background-color: #bfbcbc69;
+}
