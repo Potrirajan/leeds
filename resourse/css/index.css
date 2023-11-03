@@ -170,6 +170,17 @@
         font-size: 28px;
     }
 }
+
+/* service */
+.service .card:hover img{
+    cursor: pointer;
+    transform:scaleY(1.5);
+}
+.service .card:hover h3{
+    z-index: 90;
+    color: white;
+}
+
 /* companies */
 #companies{
     background: #6b70750a;
